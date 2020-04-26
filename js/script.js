@@ -51,22 +51,28 @@ function getUrlParameter(sParam) {
     }
 }
 
-names = [
 
-('aaron1','Aaron, Son of Mosiah','p'),
-('aaron2','Aaron, Lamanite King','p'),
-('abinadi','Abinadi','p'),
-('abinadom','Abinadom','p'),
-('abish','Abish','p'),
-('aha','Aha','p'),
-('ahah','Ahah','p'),
+
+names = [
+('aaron1','Aaron, Son of Mosiah','ĕr´an','p'),
+('aaron2','Aaron, Lamanite King','ĕr´an','p'),
+('abel', 'Abel','ā´bul','p'),
+('abinadi','Abinadi','a-bĭn´a-dī','p'),
+('abinadom','Abinadom','a-bĭn´a-dum','p'),
+('abish','Abish','ā´bĭsh','p'),
+('ablom','Ablom','ăb´lum','p'),
+('abraham','Abraham','ā´bra-hăm','p'),
+('adam','Adam','ăd´um','p'),
+('agosh','Agosh','ā´gäsh','p'),
+('aha','Aha','ā´hä','p'),
+('ahah','Ahah',,'''p'),
 ('akish1','Akish, Jaredite King','p'),
 ('alma1','Alma, the Elder','p'),
 ('alma2','Alma, Son of Alma','p'),
 ('alma3','Alma, Valley of','l'),
 ('amaleki1','Amaleki, Son of Abinadom','p'),
 ('amaleki2','Amaleki, Nephite Expeditioner','p'),
-('amalekites','Amalekites','g')
+('amalekites','Amalekites','g'),
 
 
 ('ammon1','Ammon, the Mulekite'),
@@ -84,7 +90,7 @@ names = [
 ('jacob1','Jacob, Son of Lehi'),
 ('jerusalem1','Jerusalem, Jews'),
 ('joseph1','Joseph, Son of Lehi'),
-('joseph2':'Joseph, Son of Jacob'),
+('joseph2','Joseph, Son of Jacob'),
 ('laban','Laban'),
 ('laman','Laman, Son of Lehi'),
 ('lehi','Lehi, Father'),
@@ -92,17 +98,16 @@ names = [
 ('nephi1','Nephi, Son of Lehi'),
 ('sam','Sam'),
 ('sariah','Sariah'),
-('sherem':'Sherem'),
+('sherem','Sherem'),
 ('sons-ishmael','Sons, of Ishmael'),
 ('wife-ishmael','Wife, of Ishmael'),
 ('zedekiah','Zedekiah, King'),
 ('zoram','Zoram'),
-
-
-
-
-
 ]
+function initProfiles(){
+  let list = d3.select('#profile-list');
+
+}
 
 function profile(param){
     d3.select('#name').text(param);
